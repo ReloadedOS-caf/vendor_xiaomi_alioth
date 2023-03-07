@@ -1,7 +1,7 @@
 {
   "config":{
-    "hw_platform": ["MTP", "Dragon", "Surf", "URD", "ALIOTH"],
-    "soc_id": ["291", "246", "305", "321", "339", "356"]
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "MUNCH"],
+    "soc_id": ["336", "339", "341", "321", "339", "356"]
   },
   "tcs3701_platform":{
     "owner": "sns_tcs3701",
@@ -10,8 +10,8 @@
       "bus_type":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "bus_instance":{ "type": "int", "ver": "1",
-        "data": "4"
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
       },
       "slave_config":{ "type": "int", "ver": "0",
         "data": "57"
@@ -25,10 +25,10 @@
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "dri_irq_num":{ "type": "int", "ver": "4",
+      "dri_irq_num":{ "type": "int", "ver": "0",
         "data": "126"
       },
-      "irq_pull_type":{ "type": "int", "ver": "2",
+      "irq_pull_type":{ "type": "int", "ver": "0",
         "data": "2"
       },
       "irq_is_chip_pin":{ "type": "int", "ver": "0",
@@ -37,17 +37,14 @@
       "irq_drive_strength":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "irq_trigger_type":{ "type": "int", "ver": "2",
+      "irq_trigger_type":{ "type": "int", "ver": "0",
         "data": "1"
       },
       "num_rail":{ "type": "int", "ver": "0",
-        "data": "2"
+        "data": "1"
       },
       "rail_on_state":{ "type": "int", "ver": "0",
         "data": "2"
-      },
-      "vdd_rail":{ "type": "str", "ver": "2",
-        "data": "/pmic/client/sensor_vddio"
       },
       "vddio_rail":{ "type": "str", "ver": "0",
         "data": "/pmic/client/sensor_vddio"
@@ -140,112 +137,268 @@
         "data": "0.0"
       }
     },
-    ".cct_hir":{
+    ".cct_hir_0":{
       "owner": "sns_tcs3701",
-      "0":{ "type": "flt", "ver": "0",
-        "data": "-0.199554"
+      "0":{ "type": "flt", "ver": "4",
+        "data": "-0.219664"
       },
-      "1":{ "type": "flt", "ver": "0",
-        "data": "0.336274"
+      "1":{ "type": "flt", "ver": "4",
+        "data": "0.283771"
       },
-      "2":{ "type": "flt", "ver": "0",
-        "data": "0.467457"
+      "2":{ "type": "flt", "ver": "4",
+        "data": "1.132169"
       },
-      "3":{ "type": "flt", "ver": "0",
-        "data": "0.555853"
+      "3":{ "type": "flt", "ver": "4",
+        "data": "0.000649"
       },
-      "4":{ "type": "flt", "ver": "0",
+      "4":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "5":{ "type": "flt", "ver": "0",
+      "5":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "6":{ "type": "flt", "ver": "0",
+      "6":{ "type": "flt", "ver": "4",
         "data": "1.000000"
       },
-      "7":{ "type": "flt", "ver": "0",
+      "7":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "8":{ "type": "flt", "ver": "0",
-        "data": "0.789206"
+      "8":{ "type": "flt", "ver": "4",
+        "data": "0.568760"
       },
-      "9":{ "type": "flt", "ver": "0",
-        "data": "-1.808935"
+      "9":{ "type": "flt", "ver": "4",
+        "data": "-1.253294"
       },
-      "10":{ "type": "flt", "ver": "0",
-        "data": "2.342972"
+      "10":{ "type": "flt", "ver": "4",
+        "data": "0.770627"
       },
-      "11":{ "type": "flt", "ver": "0",
-        "data": "-0.862581"
+      "11":{ "type": "flt", "ver": "4",
+        "data": "0.513192"
+      }
+    },
+    ".cct_hir":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "5",
+        "data": "-0.193048"
+      },
+      "1":{ "type": "flt", "ver": "5",
+        "data": "0.375078"
+      },
+      "2":{ "type": "flt", "ver": "5",
+        "data": "0.564069"
+      },
+      "3":{ "type": "flt", "ver": "5",
+        "data": "0.396840"
+      },
+      "4":{ "type": "flt", "ver": "5",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "5",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "5",
+        "data": "1.000000"
+      },
+      "7":{ "type": "flt", "ver": "5",
+        "data": "0.000000"
+      },
+      "8":{ "type": "flt", "ver": "5",
+        "data": "0.401959"
+      },
+      "9":{ "type": "flt", "ver": "5",
+        "data": "-1.589786"
+      },
+      "10":{ "type": "flt", "ver": "5",
+        "data": "3.690315"
+      },
+      "11":{ "type": "flt", "ver": "5",
+        "data": "-1.699896"
+      }
+    },
+    ".cct_hir_1":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "4",
+        "data": "-0.360567"
+      },
+      "1":{ "type": "flt", "ver": "4",
+        "data": "0.531092"
+      },
+      "2":{ "type": "flt", "ver": "4",
+        "data": "1.145143"
+      },
+      "3":{ "type": "flt", "ver": "4",
+        "data": "0.006808"
+      },
+      "4":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "4",
+        "data": "1.000000"
+      },
+      "7":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "8":{ "type": "flt", "ver": "4",
+        "data": "1.003151"
+      },
+      "9":{ "type": "flt", "ver": "4",
+        "data": "-2.119281"
+      },
+      "10":{ "type": "flt", "ver": "4",
+        "data": "1.266292"
+      },
+      "11":{ "type": "flt", "ver": "4",
+        "data": "-0.033932"
+      }
+    },
+    ".cct_lir_0":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "4",
+        "data": "-0.215206"
+      },
+      "1":{ "type": "flt", "ver": "4",
+        "data": "0.335992"
+      },
+      "2":{ "type": "flt", "ver": "4",
+        "data": "1.261535"
+      },
+      "3":{ "type": "flt", "ver": "4",
+        "data": "-0.223748"
+      },
+      "4":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "4",
+        "data": "1.000000"
+      },
+      "7":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "8":{ "type": "flt", "ver": "4",
+        "data": "-0.026250"
+      },
+      "9":{ "type": "flt", "ver": "4",
+        "data": "-0.216308"
+      },
+      "10":{ "type": "flt", "ver": "4",
+        "data": "0.147309"
+      },
+      "11":{ "type": "flt", "ver": "4",
+        "data": "1.320019"
       }
     },
     ".cct_lir":{
       "owner": "sns_tcs3701",
-      "0":{ "type": "flt", "ver": "0",
-        "data": "-0.157068"
+      "0":{ "type": "flt", "ver": "4",
+        "data": "-0.232423"
       },
-      "1":{ "type": "flt", "ver": "0",
-        "data": "0.292238"
+      "1":{ "type": "flt", "ver": "4",
+        "data": "0.394808"
       },
-      "2":{ "type": "flt", "ver": "0",
-        "data": "1.099506"
+      "2":{ "type": "flt", "ver": "4",
+        "data": "1.236598"
       },
-      "3":{ "type": "flt", "ver": "0",
-        "data": "-0.144661"
+      "3":{ "type": "flt", "ver": "4",
+        "data": "-0.232708"
       },
-      "4":{ "type": "flt", "ver": "0",
+      "4":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "5":{ "type": "flt", "ver": "0",
+      "5":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "6":{ "type": "flt", "ver": "0",
+      "6":{ "type": "flt", "ver": "4",
         "data": "1.000000"
       },
-      "7":{ "type": "flt", "ver": "0",
+      "7":{ "type": "flt", "ver": "4",
         "data": "0.000000"
       },
-      "8":{ "type": "flt", "ver": "0",
-        "data": "0.076474"
+      "8":{ "type": "flt", "ver": "5",
+        "data": "0.105295"
       },
-      "9":{ "type": "flt", "ver": "0",
-        "data": "-0.263021"
+      "9":{ "type": "flt", "ver": "4",
+        "data": "-0.410396"
       },
-      "10":{ "type": "flt", "ver": "0",
-        "data": "-0.189782"
+      "10":{ "type": "flt", "ver": "4",
+        "data": "0.131587"
       },
-      "11":{ "type": "flt", "ver": "0",
-        "data": "1.543625"
+      "11":{ "type": "flt", "ver": "4",
+        "data": "1.196320"
+      }
+    },
+    ".cct_lir_1":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "4",
+        "data": "-0.334731"
+      },
+      "1":{ "type": "flt", "ver": "4",
+        "data": "0.543797"
+      },
+      "2":{ "type": "flt", "ver": "4",
+        "data": "1.340739"
+      },
+      "3":{ "type": "flt", "ver": "4",
+        "data": "-0.270647"
+      },
+      "4":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "4",
+        "data": "1.000000"
+      },
+      "7":{ "type": "flt", "ver": "4",
+        "data": "0.000000"
+      },
+      "8":{ "type": "flt", "ver": "4",
+        "data": "0.711965"
+      },
+      "9":{ "type": "flt", "ver": "4",
+        "data": "-1.072349"
+      },
+      "10":{ "type": "flt", "ver": "4",
+        "data": "-0.478515"
+      },
+      "11":{ "type": "flt", "ver": "4",
+        "data": "0.924861"
       }
     },
     ".lux_hir":{
       "owner": "sns_tcs3701",
-      "0":{ "type": "flt", "ver": "0",
-        "data": "0.223193"
+      "0":{ "type": "flt", "ver": "4",
+        "data": "0.287227"
       },
-      "1":{ "type": "flt", "ver": "0",
-        "data": "-0.177337"
+      "1":{ "type": "flt", "ver": "4",
+        "data": "-0.263910"
       },
-      "2":{ "type": "flt", "ver": "0",
-        "data": "0.036976"
+      "2":{ "type": "flt", "ver": "4",
+        "data": "0.390820"
       },
-      "3":{ "type": "flt", "ver": "0",
-        "data": "-0.069965"
+      "3":{ "type": "flt", "ver": "4",
+        "data": "-0.318877"
       }
     },
     ".lux_lir":{
       "owner": "sns_tcs3701",
-      "0":{ "type": "flt", "ver": "0",
-        "data": "0.673620"
+      "0":{ "type": "flt", "ver": "4",
+        "data": "0.305164"
       },
-      "1":{ "type": "flt", "ver": "0",
-        "data": "-0.589996"
+      "1":{ "type": "flt", "ver": "4",
+        "data": "-0.163841"
       },
-      "2":{ "type": "flt", "ver": "0",
-        "data": "-0.088797"
+      "2":{ "type": "flt", "ver": "4",
+        "data": "0.421117"
       },
-      "3":{ "type": "flt", "ver": "0",
-        "data": "-0.705971"
+      "3":{ "type": "flt", "ver": "4",
+        "data": "-0.521447"
       }
     }
   }

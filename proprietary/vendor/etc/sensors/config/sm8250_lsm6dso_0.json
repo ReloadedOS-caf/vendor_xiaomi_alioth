@@ -1,6 +1,6 @@
 {
   "config":{
-    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "ALIOTH"],
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "MUNCH"],
     "soc_id": ["321", "339", "356"]
   },
   "lsm6dso_0_platform":{
@@ -10,7 +10,7 @@
       "bus_type":{ "type": "int", "ver": "0",
         "data": "1"
       },
-      "bus_instance":{ "type": "int", "ver": "1",
+      "bus_instance":{ "type": "int", "ver": "0",
         "data": "3"
       },
       "slave_config":{ "type": "int", "ver": "0",
@@ -28,10 +28,10 @@
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "dri_irq_num":{ "type": "int", "ver": "1",
+      "dri_irq_num":{ "type": "int", "ver": "0",
         "data": "122"
       },
-      "irq_pull_type":{ "type": "int", "ver": "1",
+      "irq_pull_type":{ "type": "int", "ver": "0",
         "data": "2"
       },
       "irq_is_chip_pin":{ "type": "int", "ver": "0",
@@ -40,16 +40,16 @@
       "irq_drive_strength":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "irq_trigger_type":{ "type": "int", "ver": "1",
+      "irq_trigger_type":{ "type": "int", "ver": "0",
         "data": "3"
       },
-      "num_rail":{ "type": "int", "ver": "1",
+      "num_rail":{ "type": "int", "ver": "0",
         "data": "1"
       },
       "rail_on_state":{ "type": "int", "ver": "0",
         "data": "1"
       },
-      "vddio_rail":{ "type": "str", "ver": "1",
+      "vddio_rail":{ "type": "str", "ver": "0",
         "data": "/pmic/client/sensor_vddio"
       },
       "rigid_body_type":{ "type": "int", "ver": "0",
@@ -64,11 +64,11 @@
     },
     ".orient":{
       "owner": "lsm6dso",
-      "x":{ "type": "str", "ver": "4",
-        "data": "+x"
+      "x":{ "type": "str", "ver": "1",
+        "data": "-x"
       },
-      "y":{ "type": "str", "ver": "4",
-        "data": "+y"
+      "y":{ "type": "str", "ver": "1",
+        "data": "-y"
       },
       "z":{ "type": "str", "ver": "2",
         "data": "+z"
@@ -80,8 +80,8 @@
         "owner": "lsm6dso",
         ".corr_mat":{
           "owner": "lsm6dso",
-          "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0"
+          "0_0":{ "type": "flt", "ver": "1",
+            "data": "1.017"
           },
           "0_1":{ "type": "flt", "ver": "0",
             "data": "0.0"
